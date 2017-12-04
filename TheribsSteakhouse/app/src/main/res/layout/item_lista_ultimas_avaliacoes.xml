@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_border">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/height_listas"
+        android:text="Cliente:"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_titulo_20"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/height_listas"
+        android:text="5033"
+        android:gravity="left"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_titulo_20"
+        android:textStyle="bold"
+        android:id="@+id/txt_nome_cliente"/>
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/height_listas"
+        android:text="10"
+        android:gravity="center"
+        android:textColor="@color/vermelhoPadrao"
+        android:textSize="@dimen/text_titulo_20"
+        android:textStyle="bold"
+        android:id="@+id/txt_nota"
+        />
+
+</LinearLayout>

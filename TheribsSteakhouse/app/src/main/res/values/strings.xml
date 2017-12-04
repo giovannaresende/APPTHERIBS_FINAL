@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">The Ribs</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_cardapio">Cardápio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_entre_em_contato">Entre Em Contato</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_tela_principal_cliente">The Ribs</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_ivity_visualizar_prato">Visualizar Prato</string>
+    <string name="title_activity_visualizar_prato">Visualizar Prato</string>
+    <string name="title_activdrawer_close">Close navigation drawer</string>
+    <string name="title_activity_inserir_codigo">Inserir Codigo</string>
+    <string name="link">www.theribsws.com.br/api_tcc_mobile/</string>
+    <string name="link_imagem">www.theribsws.com.br/arquivos_enviados/</string>
+    <!--<string name="link">http://10.0.2.2/api_tcc_mobile/</string>
+    <string name="link_imagem">http://10.0.2.2/arquivos_enviados/</string>
+    <string name="link">http://192.168.1.41/web/api_tcc_mobile/</string>
+   <string name="link_imagem">http://192.168.1.41/web/aa/arquivos_enviados/</string>-->
+    <string name="title_activity_tela_principal_garcom">Garçom</string>
+    <string name="gerar_codigo">Gerar Código</string>
+    <string name="fazer_pedido">Fazer Pedido</string>
+    <string name="pedidos_prontos">Pedidos Prontos</string>
+    <string name="chamados_pendentes">Chamados Pendentes</string>
+    <string name="desempenho">Desempenho</string>
+    <string name="fechar_conta">Fechar Conta</string>
+    <string name="title_activity_chamados_pendentes">Chamados Pendentes</string>
+    <string name="title_activity_fechar_conta">Fechar Conta</string>
+    <string name="title_activity_teste">Sign in</string>
+    <string name="title_activity_desempenho">Desempenho</string>
+    <string name="title_activity_main2">Endereços</string>
+    <string name="title_activity_nossa_localizacao">Endereços</string>
+    <string name="title_activity_pratos_grid_view">PratosGridViewActivity</string>
+    <string name="title_activity_detalhes_pratos">DetalhesPratosActivity</string>
+    <string name="title_activity_progress">Sign in</string>
+    <string name="title_activity_aaa">Sign in</string>
+    <string name="title_activity_reserva">Reservas</string>
+    <string name="title_activity_lista_pedido">ListaPedido</string>
+
+</resources>

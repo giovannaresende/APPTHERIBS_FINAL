@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_codigo"
+            android:icon="@drawable/ic_code_black_24dp"
+            android:title="Codigo" />
+
+        <item
+            android:id="@+id/nav_cardapio"
+            android:icon="@drawable/cardapio"
+            android:title="Cardapio" />
+        <item
+            android:id="@+id/nav_pratos_pedidos"
+            android:icon="@drawable/cardapio"
+            android:title="Pratos pedidos" />
+
+        <item
+            android:id="@+id/reserva"
+            android:icon="@drawable/ic_bookmark_black_24dp"
+            android:title="Reserva" />
+
+        <item
+            android:id="@+id/sair"
+            android:icon="@drawable/ic_exit_to_app_black_36dp"
+            android:title="Sair" />
+
+    </group>
+
+</menu>

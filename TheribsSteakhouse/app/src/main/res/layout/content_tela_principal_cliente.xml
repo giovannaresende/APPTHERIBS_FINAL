@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.com.theribs.Cliente.TelaPrincipalCliente"
+    tools:showIn="@layout/app_bar_tela_principal_cliente"
+    android:padding="16dp"
+    android:orientation="vertical"
+    >
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Produtos Principais"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carne com feijoada"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/nome_prato_home"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Avaliação: 5.0"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/nota_avaliacao_home"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/carne"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/img_prato_home"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Preço:20.00"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txt_preco_home"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conferir"
+                        android:id="@+id/btn_conferir"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carne com feijoada"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:id="@+id/nome_prato_home"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Avaliação: 5.0"
+                    android:gravity="right"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/nota_avaliacao_home"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/carne"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/img_prato_home"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Preço:20.00"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:id="@+id/txt_preco_home"
+                        />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Conferir"
+                        android:id="@+id/btn_conferir"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Avalie nossos pratos"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        />
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/carne"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</ScrollView>

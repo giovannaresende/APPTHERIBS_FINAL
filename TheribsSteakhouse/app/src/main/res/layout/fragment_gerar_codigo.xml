@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="br.com.theribs.Garcom.MainGarcom">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-70dp">
+
+            <TextView
+                android:id="@+id/btn_gerar_codigo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_listas"
+                android:layout_marginTop="20dp"
+                android:background="@color/vermelhoPadrao"
+                android:gravity="center"
+                android:text="Selecione uma mesa"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"  />
+
+            <Spinner
+
+                android:id="@+id/numero_mesa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/title_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="90dp"
+            android:gravity="center"
+            android:text="Código gerado:"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/numero_pedido_gerado"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/bottom_border"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/btn_iniciar_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_listas"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/vermelhoPadrao"
+            android:gravity="center"
+            android:text="Iniciar pedido"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</LinearLayout>
+

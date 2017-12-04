@@ -1,0 +1,84 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="br.com.theribs.BeforeLogin.EntreEmContatoFragment"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:hint="Nome"
+                android:id="@+id/nome_cliente_contato"
+                />
+
+            <EditText
+
+                android:layout_marginTop="20dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                android:hint="Telefone"
+                android:id="@+id/telefone_cliente_contato"
+                android:inputType="number"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Email"
+                android:id="@+id/email_cliente_contato"
+                android:inputType="textEmailAddress"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/spn_classificacao"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:gravity="top"
+                android:hint="Escreva aqui seu comentário..."
+                android:id="@+id/txt_comentario_contato"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Enviar Comentário"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:id="@+id/btn_enviarComentario"
+            android:textSize="18dp"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>
