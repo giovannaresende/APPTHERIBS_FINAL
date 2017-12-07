@@ -1,8 +1,10 @@
 package br.com.theribs.Garcom;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,6 +29,7 @@ public class FazerPedido extends Fragment {
     MyListView lst_mesas;
     ArrayAdapter adapter;
     String id_funcionario;
+    SharedPreferences preferences;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,6 +38,8 @@ public class FazerPedido extends Fragment {
         v = inflater.inflate(R.layout.fragment_fazer_pedido, container, false);
 
         findViews();
+
+        preferences = PreferenceManager.getDefaultSharedPreferences(getContext());
 
         DadosGarcom id = DadosGarcom.getDados(getContext());
         id_funcionario = id.getId_funcionario();
@@ -55,7 +60,7 @@ public class FazerPedido extends Fragment {
                 Mesas id_mesa = (Mesas) adapter.getItem(position);
 
                 Intent abrirPedido = new Intent(getContext(), ListaPedido.class);
-                abrirPedido.putExtra("id_mesa", id_mesa.getIdMesa());
+                preferences.edit().putString("id_mesa", String.valueOf(id_mesa.getIdMesa())).commit();
                 startActivity(abrirPedido);
             }
         });

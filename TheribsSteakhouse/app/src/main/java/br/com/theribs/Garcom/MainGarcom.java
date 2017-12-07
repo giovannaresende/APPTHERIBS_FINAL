@@ -1,18 +1,22 @@
 package br.com.theribs.Garcom;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import br.com.theribs.MainActivity;
 import br.com.theribs.R;
 
 public class MainGarcom extends AppCompatActivity {
@@ -43,13 +47,13 @@ public class MainGarcom extends AppCompatActivity {
                     transaction.replace(R.id.container, new PedidosProntos()).commit();
                     return true;
 
-                case R.id.chamados_pendentes:
+                /*case R.id.chamados_pendentes:
                     transaction.replace(R.id.container, new ChamadosPendentes()).commit();
                     return true;
 
                 case R.id.fechar_conta:
                     transaction.replace(R.id.container, new FecharContaFragment()).commit();
-                    return true;
+                    return true;*/
             }
             return false;
         }
@@ -73,24 +77,27 @@ public class MainGarcom extends AppCompatActivity {
 
     }
 
-    public void VisualizarPedidosRealizados(View view) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
 
-        Toast.makeText(context, "Em andamento...", Toast.LENGTH_LONG).show();
+        getMenuInflater().inflate(R.menu.menu_fechar_conta, menu);
+        return true;
     }
 
-    public void BuscarProdutos(View view) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-        Toast.makeText(context, "Buscar...", Toast.LENGTH_LONG).show();
+        if(item.getItemId() == R.id.action_desempenho){
+
+            Intent desempenho = new Intent(context, Desempenho.class);
+            startActivity(desempenho);
+
+            return true;
+        }else{
+            Intent intent = new Intent(context, MainActivity.class);
+            startActivity(intent);
+            return true;
+        }
     }
 
-    public void adicionarProduto(View view) {
-
-        Toast.makeText(context, "Add", Toast.LENGTH_SHORT).show();
-    }
-
-
-    public void tirarProduto(View view) {
-
-        Toast.makeText(context, "Tirar", Toast.LENGTH_SHORT).show();
-    }
 }

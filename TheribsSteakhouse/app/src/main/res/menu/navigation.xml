@@ -16,7 +16,7 @@
         android:icon="@drawable/ic_done_all_black_24dp"
         android:title="@string/pedidos_prontos" />
 
-    <item
+    <!--<item
         android:id="@+id/chamados_pendentes"
         android:icon="@drawable/ic_call_received_black_24dp"
         android:title="@string/chamados_pendentes" />
@@ -24,6 +24,6 @@
     <item
         android:id="@+id/fechar_conta"
         android:icon="@drawable/ic_payment_black_24dp"
-        android:title="Fechar Conta"/>
+        android:title="Fechar Conta"/>-->
 
 </menu>

@@ -19,6 +19,7 @@ import java.util.List;
 import br.com.theribs.BeforeLogin.CardapioFragment;
 import br.com.theribs.Classes.Pratos;
 import br.com.theribs.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * Created by j4m2 on 16/11/17.
@@ -29,8 +30,6 @@ public class AdapterPratosBeforeLogin extends ArrayAdapter<Pratos>{
     public AdapterPratosBeforeLogin(Context context, List<Pratos> lista){
         super(context, 0, lista);
     }
-
-
 
     @NonNull
     @Override
@@ -47,7 +46,7 @@ public class AdapterPratosBeforeLogin extends ArrayAdapter<Pratos>{
 
         TextView nome_prato = v.findViewById(R.id.nome_prato_before_login);
         TextView preco_prato = v.findViewById(R.id.preco_prato_before_login);
-        ImageView img_prato = v.findViewById(R.id.imagem_prato_before_login);
+        CircleImageView img_prato = v.findViewById(R.id.imagem_prato_before_login);
 
         String url = getContext().getString(R.string.link_imagem) + pratos.getFoto_prato();
 

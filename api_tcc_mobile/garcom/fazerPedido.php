@@ -25,6 +25,22 @@
         echo json_encode($retorno);
 
       break;
+
+      case 'verificar':
+
+        $select = "select * from verificar_pedido_aberto where id_mesa = ".$_GET['id_mesa'].";";
+        $exec = mysql_query($select);
+        if(mysql_num_rows($exec) > 0){
+
+          $objeto = array("resultado" => "ok");
+
+          echo json_encode($objeto);
+        }else{
+
+          $objeto = array("resultado" =>"erro");
+          echo json_encode($objeto);
+        }
+      break;
     }
 
   }

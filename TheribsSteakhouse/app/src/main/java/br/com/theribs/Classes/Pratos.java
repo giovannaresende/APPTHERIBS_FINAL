@@ -75,6 +75,4 @@ public class Pratos implements Serializable {
     }
 
 
-
-
 }

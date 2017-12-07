@@ -13,4 +13,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/lst_pratos"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btn_fazer_pedido"
+        android:background="@color/vermelhoPadrao"
+        android:text="Enviar para a cozinha"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
 </android.support.constraint.ConstraintLayout>

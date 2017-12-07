@@ -29,11 +29,12 @@
     <string name="title_activity_visualizar_prato">Visualizar Prato</string>
     <string name="title_activdrawer_close">Close navigation drawer</string>
     <string name="title_activity_inserir_codigo">Inserir Codigo</string>
-    <string name="link">www.theribsws.com.br/api_tcc_mobile/</string>
-    <string name="link_imagem">www.theribsws.com.br/arquivos_enviados/</string>
-    <!--<string name="link">http://10.0.2.2/api_tcc_mobile/</string>
-    <string name="link_imagem">http://10.0.2.2/arquivos_enviados/</string>
-    <string name="link">http://192.168.1.41/web/api_tcc_mobile/</string>
+    <!--<string name="link">http://www.theribsws.com.br/api_tcc_mobile/</string>
+    <string name="link_imagem">http://www.theribsws.com.br/arquivos_enviados/</string>-->
+    <!-- -->
+    <string name="link">http://10.0.2.2/api_tcc_mobile/</string>
+    <string name="link_imagem">http://10.0.2.2/</string>
+    <!--<string name="link">http://192.168.1.41/web/api_tcc_mobile/</string>
    <string name="link_imagem">http://192.168.1.41/web/aa/arquivos_enviados/</string>-->
     <string name="title_activity_tela_principal_garcom">Garçom</string>
     <string name="gerar_codigo">Gerar Código</string>
